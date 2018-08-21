@@ -14,15 +14,16 @@ public class CursorAffordance : MonoBehaviour
     // Cached component references
     CameraRaycaster myCameraRaycast;
 
-	// Use this for initialization
-	void Start()
+    // Use this for initialization
+    void Start()
     {
         myCameraRaycast = GetComponent<CameraRaycaster>();
+        myCameraRaycast.layerChangeObservers += OnLayerChanged;   // registering
 	}
-	
-	// Update is called once per frame
-	void LateUpdate()
+
+    void OnLayerChanged()
     {
+        print("Cursor over new layer");
         switch(myCameraRaycast.currentLayerHit)
         {
             case Layer.Walkable:
