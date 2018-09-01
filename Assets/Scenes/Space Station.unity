@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 6d423d92e852b794a802858c49afb3c7, type: 2}
 --- !u!1 &9001337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2237,7 +2237,7 @@ Prefab:
     - target: {fileID: 114303246207418346, guid: 833a3cbec60a98b4991b7bfaa00b878f,
         type: 2}
       propertyPath: zRotationsPerMinute
-      value: 60
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 833a3cbec60a98b4991b7bfaa00b878f, type: 2}
@@ -3109,7 +3109,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!154 &1427878532
 TerrainCollider:
