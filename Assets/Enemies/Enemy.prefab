@@ -1374,13 +1374,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149790}
   m_LocalRotation: {x: -0, y: -0.98864776, z: -0, w: -0.1502521}
-  m_LocalPosition: {x: 2.7880826, y: 0, z: -2.8469791}
+  m_LocalPosition: {x: 199.1499, y: 9.998169, z: 48.52668}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 469942}
   - {fileID: 495908}
   - {fileID: 448028}
   - {fileID: 4122062602486926}
+  - {fileID: 4087617956332096}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -197.28299, z: 0}
@@ -2757,6 +2758,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1921559120716114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4087617956332096}
+  m_Layer: 10
+  m_Name: Projectile Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4087617956332096
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921559120716114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.666, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 408730}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4122062602486926
 Transform:
   m_ObjectHideFlags: 1
@@ -2883,6 +2912,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealthPoints: 100
   attackRadius: 4
+  damagePerShot: 9
+  chaseRadius: 10
+  projectileToUse: {fileID: 1880135985083452, guid: 7ef197f4d800df845b0acb304432ec53,
+    type: 2}
+  projectileSocket: {fileID: 1921559120716114}
 --- !u!195 &195412136206495370
 NavMeshAgent:
   m_ObjectHideFlags: 1
