@@ -3359,7 +3359,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 0c64dcadf93f1864a8e4b71bfef03d76, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 39.606014
+      value: 44.42
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 0c64dcadf93f1864a8e4b71bfef03d76, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3383,7 +3383,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 149790, guid: 0c64dcadf93f1864a8e4b71bfef03d76, type: 2}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Gangagan
       objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 0c64dcadf93f1864a8e4b71bfef03d76, type: 2}
       propertyPath: m_LocalScale.x
