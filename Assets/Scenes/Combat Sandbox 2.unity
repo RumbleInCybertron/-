@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 6d423d92e852b794a802858c49afb3c7, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 7cc77a2d6a9c595499b2de6ee857b216, type: 2}
 --- !u!1 &9001337
 GameObject:
   m_ObjectHideFlags: 0
@@ -5953,6 +5953,7 @@ MonoBehaviour:
   maxHealthPoints: 100
   attackDamagePerHit: 10
   minTimeBetweenHits: 0.5
+  maxAttackRange: 2
 --- !u!114 &1083165866
 MonoBehaviour:
   m_ObjectHideFlags: 0
