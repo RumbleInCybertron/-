@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField] Vector3 aimOffset = new Vector3(0, 1f, 0);
 
     bool isAttacking = false;
-    float currentHealthPoints = 100f;
+    float currentHealthPoints;
     AICharacterControl aiCharacterControl = null;
     GameObject player = null;
 
@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         player = GameObject.FindGameObjectWithTag("Player");
         aiCharacterControl = GetComponent<AICharacterControl>();
+        currentHealthPoints = maxHealthPoints;
     }
 
     private void Update()

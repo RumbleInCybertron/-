@@ -2642,10 +2642,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511b226556f37f9429cb4db7f89a945a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealthPoints: 100
-  chaseRadius: 10
-  attackRadius: 4
-  damagePerShot: 4
+  maxHealthPoints: 50
+  chaseRadius: 8
+  attackRadius: 2
+  damagePerShot: 3
   secondsBetweenShots: 0.5
   projectileToUse: {fileID: 1880135985083452, guid: 7ef197f4d800df845b0acb304432ec53,
     type: 2}
@@ -2920,7 +2920,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
