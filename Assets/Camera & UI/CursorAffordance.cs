@@ -16,18 +16,17 @@ public class CursorAffordance : MonoBehaviour
     [SerializeField] const int enemyLayerNumber = 10;
 
     // Cached component references
-    CameraRaycaster myCameraRaycast;
+    CameraRaycaster cameraRaycaster;
 
     // Use this for initialization
     void Start()
     {
-        myCameraRaycast = GetComponent<CameraRaycaster>();
-        myCameraRaycast.notifyLayerChangeObservers += OnLayerChanged;   // registering
+        cameraRaycaster = GetComponent<CameraRaycaster>();
+        cameraRaycaster.notifyLayerChangeObservers += OnLayerChanged;   // registering
 	}
 
     void OnLayerChanged(int newLayer)
     {
-        print("Cursor over new layer");
         switch(newLayer)
         {
             case walkableLayerNumber:
